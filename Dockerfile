@@ -4,9 +4,9 @@ WORKDIR /app
 
 COPY . .
 
-RUN yarn install
+RUN npm install -D
 
-RUN yarn build
+RUN npm run build
 
 FROM node:lts AS runner
 
@@ -14,8 +14,8 @@ WORKDIR /app
 
 COPY --from=builder /app/build /app
 
-RUN yarn install --production
+RUN npm install
 
 EXPOSE 3333
 
-ENTRYPOINT [ "node", "server.js" ]
+ENTRYPOINT npm run migrate && npm start

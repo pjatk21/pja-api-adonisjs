@@ -46,7 +46,15 @@ const databaseConfig: DatabaseConfig = {
       healthCheck: false,
       debug: false,
     },
-
+    docker: {
+      client: 'pg',
+      connection: {
+        host: 'db',
+        user: 'adonisjs',
+        password: Env.get('PG_PASSWD'),
+        database: 'pja-api'
+      }
+    }
   }
 }
 

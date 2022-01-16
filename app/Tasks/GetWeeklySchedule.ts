@@ -6,7 +6,8 @@ import Logger from '@ioc:Adonis/Core/Logger'
 
 export default class GetWeeklySchedule extends BaseTask {
   public static get schedule () {
-    return '0 3,13,23 * * * *' // At minute 0 past hour 3, 13, and 23
+    // At minute 0 past hour 3, 13, and 23
+    return process.env.NODE_ENV === 'development' ? '*/30 * * * * * *' : '0 3,13,23 * * * *'
   }
 
   public static get useLock () {

@@ -50,9 +50,9 @@ const databaseConfig: DatabaseConfig = {
       client: 'pg',
       connection: {
         host: 'db',
-        user: 'adonisjs',
-        password: Env.get('PG_PASSWD'),
-        database: 'pja-api'
+        user: Env.get('POSTGRES_USER'),
+        password: Env.get('POSTGRES_PASSWORD'),
+        database: Env.get('POSTGRES_DB')
       }
     }
   }

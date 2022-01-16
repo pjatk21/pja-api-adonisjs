@@ -18,16 +18,16 @@
     term-size "^2.2.1"
 
 "@adonisjs/application@^5.1.6", "@adonisjs/application@^5.1.7":
-  version "5.1.8"
-  resolved "https://registry.yarnpkg.com/@adonisjs/application/-/application-5.1.8.tgz#8a17b244f03669472da3093bf7fcced2347c0886"
-  integrity sha512-FkldM1ZcSRE6IUS8g5ww+32Y+umPTb8k4vQFKgR3FPep3NISB0V37iwUcDV1e0gR0ena2JZixenAplfpL//qVg==
+  version "5.1.9"
+  resolved "https://registry.yarnpkg.com/@adonisjs/application/-/application-5.1.9.tgz#73a56d72d5a9f50c5fabc384f5d851fad33ff68d"
+  integrity sha512-gSJgoIXoNo+V2r32lIhZPVSyovrmm2IkQNcCimd3Lv15iw2CJvKqx1WaBcuiJe1cAlxlgwHAP4vINdzoJqNNAQ==
   dependencies:
-    "@adonisjs/config" "^3.0.5"
-    "@adonisjs/env" "^3.0.5"
-    "@adonisjs/fold" "^8.1.6"
+    "@adonisjs/config" "^3.0.6"
+    "@adonisjs/env" "^3.0.6"
+    "@adonisjs/fold" "^8.1.7"
     "@adonisjs/logger" "^4.1.1"
-    "@adonisjs/profiler" "^6.0.6"
-    "@poppinss/utils" "^4.0.0"
+    "@adonisjs/profiler" "^6.0.7"
+    "@poppinss/utils" "^4.0.1"
     semver "^7.3.5"
 
 "@adonisjs/assembler@^5.3.0":
@@ -66,7 +66,7 @@
     fs-extra "^10.0.0"
     media-typer "^1.1.0"
 
-"@adonisjs/config@^3.0.5":
+"@adonisjs/config@^3.0.6":
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/@adonisjs/config/-/config-3.0.6.tgz#e765bf0531f5b823168e57bf669dc1680b79d83b"
   integrity sha512-19/OUDUy/h3SCmEt4gtOmZ8LhgaBTe0Lpnrd328SvEZJ8W02FkYrCymODussCXAiW2MfTDpLNp14RKfd9TRDmA==
@@ -114,7 +114,7 @@
   dependencies:
     "@poppinss/utils" "^4.0.1"
 
-"@adonisjs/env@^3.0.5":
+"@adonisjs/env@^3.0.5", "@adonisjs/env@^3.0.6":
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/@adonisjs/env/-/env-3.0.6.tgz#ea4288b9b8f77a87b4dba73299d610b3e049ccc5"
   integrity sha512-7ehzzGbwCzWMaSqbTgxnmdxIcMwriRxOhdRH4DCzjVhaXkTfNNRKJhVDTshoeCQ+3kuyk1NtJucVLpxjrLLbrA==
@@ -124,13 +124,13 @@
     validator "^13.6.0"
 
 "@adonisjs/events@^7.1.2":
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/@adonisjs/events/-/events-7.1.2.tgz#902e439362d2869b7fe8d5d0a7672af71dc519c7"
-  integrity sha512-S5ZhI/gFb6Ci0m6n8RRv0Gs/MBhAoFDNYJ/vilVaxTi0a6keRkRBR7Y3IgBrwXQedJnlGe4OqMXA4ExQLK8HNQ==
+  version "7.1.3"
+  resolved "https://registry.yarnpkg.com/@adonisjs/events/-/events-7.1.3.tgz#bd6019a39598c5d2416c0cfde45031ee622ed6b1"
+  integrity sha512-v2yJiheLz8tMSjfOf/+Sn94OUuHqBvbg+49BN2I4VEEXvuaoLruyVf4Sr8whI3sHcEPtrJLJk0Rtnot4TUH+2g==
   dependencies:
-    emittery "^0.9.2"
+    emittery "^0.10.0"
 
-"@adonisjs/fold@^8.1.6":
+"@adonisjs/fold@^8.1.7":
   version "8.1.7"
   resolved "https://registry.yarnpkg.com/@adonisjs/fold/-/fold-8.1.7.tgz#e28a44cfe06f2484eeed5b0665dff04af6708eee"
   integrity sha512-UqeMDzFlLrnDVLVu4b24WUb8f6RlydSGkb/Y9ZqXRPdH72Vei4tmnXcJPWKBP0SZz9kgi8KK5Xot4KBOwQryUw==
@@ -216,12 +216,12 @@
     qs "^6.10.1"
     slash "^3.0.0"
 
-"@adonisjs/profiler@^6.0.6":
-  version "6.0.6"
-  resolved "https://registry.yarnpkg.com/@adonisjs/profiler/-/profiler-6.0.6.tgz#8a7b67404f8850ca98745064565aeb264e3bee24"
-  integrity sha512-8jW1awNazVTc5cj8cihBqEHX3zbvkBQyPHyCgNqkPJez3jQ+gr4YqvUdLm4rto+eJrORna6P9H8FM/g/u0Hvcw==
+"@adonisjs/profiler@^6.0.7":
+  version "6.0.7"
+  resolved "https://registry.yarnpkg.com/@adonisjs/profiler/-/profiler-6.0.7.tgz#d978d24dbadf6dd8c9c0f5650f3cfc2fc771079e"
+  integrity sha512-cbRYCAPplbPrZf3s3ePDyWCqLoOCFjfjn/u66J0U3JRqHxrQQmfPBHomctCOtCA3BlfNuvqjJYboeNFRnKh2uA==
   dependencies:
-    "@poppinss/utils" "^3.1.4"
+    "@poppinss/utils" "^4.0.1"
     jest-worker "^27.0.6"
 
 "@adonisjs/repl@^3.1.0":
@@ -446,7 +446,7 @@
     "@poppinss/colors" "^2.1.5"
     enquirer "^2.3.6"
 
-"@poppinss/utils@^3.1.3", "@poppinss/utils@^3.1.4", "@poppinss/utils@^3.1.5", "@poppinss/utils@^3.2.0", "@poppinss/utils@^3.2.1", "@poppinss/utils@^3.3.1":
+"@poppinss/utils@^3.1.3", "@poppinss/utils@^3.1.5", "@poppinss/utils@^3.2.0", "@poppinss/utils@^3.2.1", "@poppinss/utils@^3.3.1":
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/@poppinss/utils/-/utils-3.3.1.tgz#66f44282af0b8fcb0b802553d7fed9be0b520ce1"
   integrity sha512-k4MFt+4JhOWJZ9D2xpEcG/mpZyXVXYT+dSOg83vHK1xhXl+7r0IYBXRKWX2+To7/90KJaWlwpcdCAalXE8Debg==
@@ -469,7 +469,7 @@
     slugify "^1.6.1"
     truncatise "0.0.8"
 
-"@poppinss/utils@^4.0.0", "@poppinss/utils@^4.0.1":
+"@poppinss/utils@^4.0.1":
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@poppinss/utils/-/utils-4.0.1.tgz#58a4ab5b9272a199133a0da1c4fe0aac21726b96"
   integrity sha512-F7x9kvX8uEH9kqmsVIkhGNhlkL1MHQxumuC7oYu6tt8iTPKtdO+nztbTAhSysf6ljUmlbozHlE67epPAF2PaIw==
@@ -1817,11 +1817,6 @@ emittery@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/emittery/-/emittery-0.10.0.tgz#bb373c660a9d421bb44706ec4967ed50c02a8026"
   integrity sha512-AGvFfs+d0JKCJQ4o01ASQLGPmSCxgfU9RFXvzPvZdjKK8oscynksuJhWrSTSw7j7Ep/sZct5b5ZhYCi8S/t0HQ==
-
-emittery@^0.9.2:
-  version "0.9.2"
-  resolved "https://registry.yarnpkg.com/emittery/-/emittery-0.9.2.tgz#0a57c40773c6da380115c85bd67d381dd9e22f6f"
-  integrity sha512-sweWHu3j4dQm+NjLPu17pv+m5lCeK7g4Ov0NgfbRUEyzLc59DYDeRYXqlxEvuolaToI0VR3ThjFAghzl7Acjfw==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -4379,9 +4374,10 @@ pirates@^4.0.1:
   resolved "https://registry.yarnpkg.com/pirates/-/pirates-4.0.4.tgz#07df81e61028e402735cdd49db701e4885b4e6e6"
   integrity sha512-ZIrVPH+A52Dw84R0L3/VS9Op04PuQ2SEoJL6bkshmiTic/HldyW9Tf7oH5mhJZBK7NmDx27vSMrYEXPXclpDKw==
 
-"pja-schedule-scrapper@https://github.com/pjatk21/pja-schedule-scrapper.git":
+pja-scrapper@^1.0.0:
   version "1.0.0"
-  resolved "https://github.com/pjatk21/pja-schedule-scrapper.git#fc99764e478ee2920352a619ccaa6c769a122075"
+  resolved "https://registry.yarnpkg.com/pja-scrapper/-/pja-scrapper-1.0.0.tgz#2931540e020611e46ffa0be1e1f28d8fdf2a43d2"
+  integrity sha512-FMy+dTHhKfm6AWhgV9Uf4WJtmVkfPFmQVUyrJLZ49wpn5T3hXwQNWBbiXlamhbaNepUknouuVS2lN+/oUK7dBA==
   dependencies:
     "@types/jsdom" "^16.2.13"
     "@types/node" "^16.11.10"

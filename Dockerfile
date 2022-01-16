@@ -1,6 +1,6 @@
 FROM node:lts AS builder
 
-WORKDIR /app
+WORKDIR /api
 
 COPY . .
 
@@ -8,14 +8,16 @@ RUN npm install -D
 
 RUN npm run build
 
+ENTRYPOINT npm run dev
+
 FROM node:lts AS runner
 
-WORKDIR /app
+COPY --from=builder /api/build /api
 
-COPY --from=builder /app/build /app
+WORKDIR /api
 
 RUN npm install
 
 EXPOSE 3333
 
-ENTRYPOINT npm run migrate && npm start
+ENTRYPOINT npm start

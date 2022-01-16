@@ -1,7 +1,7 @@
 import { BaseTask } from 'adonis5-scheduler/build'
 import ScheduleEntry from 'App/Models/ScheduleEntry'
 import { DateTime } from 'luxon'
-import { fetchDays } from 'pja-schedule-scrapper'
+import { fetchDays } from 'pja-scrapper'
 import Logger from '@ioc:Adonis/Core/Logger'
 
 export default class GetWeeklySchedule extends BaseTask {

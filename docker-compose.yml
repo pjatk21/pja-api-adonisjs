@@ -12,15 +12,16 @@ services:
     restart: always
   tasks:
     build:
-      target: runner
+      target: builder
     image: pjatk21/pja-api
     env_file:
      - .docker.env
     restart: always
-    entrypoint: yarn tasks
+    entrypoint: npm run tasks
   db:
     image: postgres:14
     environment:
       POSTGRES_USER: adonisjs
       POSTGRES_PASSWORD: "w9ox!na6a#LwP@p!YJ4N"
+      POSTGRES_DB: "pja-api"
     restart: always

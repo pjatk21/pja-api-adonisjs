@@ -1,0 +1,7 @@
+{
+  "extends": ["plugin:adonis/typescriptApp", "standard"],
+  "plugins": ["standard"],
+  "rules": {
+    "comma-dangle": "warn"
+  }
+}

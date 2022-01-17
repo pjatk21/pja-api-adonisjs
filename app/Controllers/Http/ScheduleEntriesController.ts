@@ -68,7 +68,13 @@ export default class ScheduleEntriesController {
         .select('groups')
         .whereNotNull('groups')
         .groupBy('groups'))
-        .map(o => o.groups)
+        .map(o => o.groups),
+      availableCodes: (await ScheduleEntry
+          .query()
+          .select('code')
+          .whereNotNull('code')
+          .groupBy('code'))
+          .map(o => o.code)
     }
   }
 }

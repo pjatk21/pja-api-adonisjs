@@ -1,5 +1,25 @@
 {
   "commands": {
+    "polldata": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./commands/Polldata",
+      "commandName": "polldata",
+      "description": "Polls data from scrapper",
+      "args": [],
+      "aliases": [],
+      "flags": [
+        {
+          "name": "workers",
+          "propertyName": "workers",
+          "type": "number",
+          "alias": "w",
+          "description": "Number of chrome instances. Assume that one worker can use up to 200MB of mem."
+        }
+      ]
+    },
     "dump:rcfile": {
       "settings": {},
       "commandPath": "@adonisjs/core/build/commands/DumpRc",

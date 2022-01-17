@@ -29,6 +29,8 @@ Route.get('/', async () => {
 
 Route.group(() => {
   Route.get('/', 'ScheduleEntriesController.index')
-  Route.get('/:date/:group', 'ScheduleEntriesController.getDay')
+  Route.get('/date/:date', 'ScheduleEntriesController.getByDay').where('date', /\d{4}-\d{2}-\d{2}/)
+  Route.get('/code/:code', 'ScheduleEntriesController.getByCode').where('code', /[A-Z]{2,4}/)
+  Route.get('/group/:group', 'ScheduleEntriesController.getByGroup').where('group', /.*\d{1,3}\w/)
   Route.get('/available', 'ScheduleEntriesController.available')
 }).prefix('/schedule')

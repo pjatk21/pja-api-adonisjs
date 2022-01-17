@@ -3,25 +3,30 @@ version: '3.8'
 services:
   api:
     build:
-      target: runner
-    image: pjatk21/pja-api
+      context: .
+      target: builder
     ports:
       - "3333:3333"
     env_file:
-     - .docker.env
+      - .docker.env
     restart: always
-  tasks:
+    depends_on:
+      - db
+    entrypoint: npm run dev
+  poller:
     build:
+      context: .
       target: builder
-    image: pjatk21/pja-api
     env_file:
-     - .docker.env
+      - .docker.env
+    depends_on:
+      - db
     restart: always
-    entrypoint: npm run tasks
+    cap_add:
+      - "SYS_ADMIN"
+    entrypoint: npm run poll
   db:
     image: postgres:14
-    environment:
-      POSTGRES_USER: adonisjs
-      POSTGRES_PASSWORD: "w9ox!na6a#LwP@p!YJ4N"
-      POSTGRES_DB: "pja-api"
+    env_file:
+      - .docker.env
     restart: always
